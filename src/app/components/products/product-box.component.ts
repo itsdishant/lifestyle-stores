@@ -15,7 +15,7 @@ import { Product } from "@app/models/product.model";
     @let product = this.product();
     @if (product) {
       <div
-        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col"
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col border border-transparent dark:border-gray-700"
       >
         <div [class]="fullWidthMode() ? 'flex flex-col sm:flex-row' : ''">
           <div
@@ -40,25 +40,25 @@ import { Product } from "@app/models/product.model";
             "
           >
             <div>
-              <h5 class="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              <h5 class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
                 {{ product.category }}
               </h5>
 
               <p
-                class="text-sm font-medium text-gray-900 line-clamp-2 hover:line-clamp-none mb-2 min-h-10"
+                class="text-sm font-medium text-gray-900 dark:text-gray-100 line-clamp-2 hover:line-clamp-none mb-2 min-h-10"
               >
                 {{ product.title }}
               </p>
 
               @if (fullWidthMode()) {
-                <p class="text-sm text-gray-600 line-clamp-3 mb-3">
+                <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 mb-3">
                   {{ product.description }}
                 </p>
               }
             </div>
 
             <div
-              class="flex justify-between items-center pt-3 border-t border-gray-100"
+              class="flex justify-between items-center pt-3 border-t border-gray-100 dark:border-gray-700"
             >
               <span class="text-lg font-bold text-red-500">
                 {{ product.price | currency }}

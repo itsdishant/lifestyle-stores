@@ -20,6 +20,7 @@ testing.
 - Cart page with quantity controls, remove item, clear all, subtotal, and
   checkout entry point.
 - Payment success and cancel routes.
+- Dark/Light mode theme switching powered by Tailwind CSS and Angular signals.
 - Playwright coverage workflow that instruments a development build and
   generates Istanbul HTML/LCOV reports.
 
@@ -196,6 +197,14 @@ cached product/category streams with `shareReplay`.
 
 It supports adding items, reducing quantity, removing items, clearing the cart,
 and showing Angular Material snack-bar messages.
+
+### `ThemeService`
+
+`ThemeService` owns the application's dark/light mode state using Angular signals. It:
+
+- Detects system preferences (`prefers-color-scheme`)
+- Toggles the `dark` class on the `documentElement`
+- Persists user preferences to `localStorage`
 
 ## Path Aliases
 

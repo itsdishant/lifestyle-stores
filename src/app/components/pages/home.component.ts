@@ -29,7 +29,7 @@ const ROWS_HEIGHT: Record<number, number> = {
     ProductBoxComponent,
   ],
   template: `
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div class="flex flex-col lg:flex-row gap-6 py-6">
           <aside class="lg:w-80 w-full">

@@ -14,20 +14,20 @@ import { StoreService } from "@app/services/store.service";
   template: `
     @if (categories()) {
       <div
-        class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden"
       >
-        <div class="border-b border-gray-200 bg-gray-50 px-4 py-3">
+        <div class="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 px-4 py-3">
           <h3
-            class="font-semibold text-gray-900 text-sm uppercase tracking-wide"
+            class="font-semibold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide"
           >
             CATEGORIES
           </h3>
         </div>
-        <div class="divide-y divide-gray-100">
+        <div class="divide-y divide-gray-100 dark:divide-gray-700">
           @for (category of categories(); track category) {
             <button
               (click)="onShowCategory(category)"
-              class="w-full text-left px-4 py-3 hover:bg-blue-50 transition-colors duration-150 text-sm text-gray-700 hover:text-gray-900"
+              class="w-full text-left px-4 py-3 hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-150 text-sm text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
             >
               {{ category }}
             </button>

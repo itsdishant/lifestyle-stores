@@ -8,19 +8,19 @@ import { CartService } from "@app/services/cart.service";
   standalone: true,
   imports: [RouterLink, MatIcon],
   template: `
-    <div class="min-h-screen bg-gray-50 flex items-center justify-center py-12">
+    <div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center py-12">
       <div
-        class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 text-center"
+        class="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden p-6 text-center"
       >
         <div class="flex justify-center mb-4">
-          <div class="bg-green-100 rounded-full p-3">
-            <mat-icon class="text-green-600 text-4xl">check_circle</mat-icon>
+          <div class="bg-green-100 dark:bg-green-900/30 rounded-full p-3">
+            <mat-icon class="text-green-600 dark:text-green-400 text-4xl">check_circle</mat-icon>
           </div>
         </div>
-        <h1 class="text-2xl font-bold text-gray-800 mb-2">
+        <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
           Payment Successful!
         </h1>
-        <p class="text-gray-600 mb-6">
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
           Thank you for your purchase. Your order has been confirmed.
         </p>
         <button

@@ -15,3 +15,15 @@ body {
 .mat-toolbar {
   margin: auto !important;
 }
+
+/* Ponytail dark mode fix for Angular Material overlays */
+.dark .mat-mdc-menu-panel {
+  background-color: #1f2937 !important; /* bg-gray-800 */
+  color: #f3f4f6 !important; /* text-gray-100 */
+}
+.dark .mat-mdc-menu-item {
+  color: #f3f4f6 !important;
+}
+.dark .mat-mdc-menu-item:hover {
+  background-color: #374151 !important; /* bg-gray-700 */
+}

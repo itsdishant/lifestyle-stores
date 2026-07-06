@@ -10,12 +10,12 @@ import { MatMenuModule } from "@angular/material/menu";
   selector: "app-products-header",
   imports: [MatIcon, MatMenuModule],
   template: `
-    <div class="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 mb-6">
       <div class="flex flex-wrap justify-between items-center gap-4 p-4">
         <div>
           <button
             [matMenuTriggerFor]="sortByMenu"
-            class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 rounded-lg transition-colors duration-200 border border-gray-200 text-sm"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg transition-colors duration-200 border border-gray-200 dark:border-gray-600 text-sm"
           >
             Sort by {{ sort }}
             <mat-icon class="text-sm">expand_more</mat-icon>
@@ -30,7 +30,7 @@ import { MatMenuModule } from "@angular/material/menu";
           <div>
             <button
               [matMenuTriggerFor]="menu"
-              class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-blue-150 text-gray-700 rounded-lg transition-colors duration-200 border border-gray-200 text-sm"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-700 hover:bg-blue-150 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg transition-colors duration-200 border border-gray-200 dark:border-gray-600 text-sm"
             >
               Show {{ itemsShowCount }}
               <mat-icon class="text-sm">expand_more</mat-icon>
@@ -45,21 +45,21 @@ import { MatMenuModule } from "@angular/material/menu";
           <div class="flex gap-1">
             <button
               (click)="onColumnsUpdated(1)"
-              class="p-2 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+              class="p-2 hover:bg-blue-50 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-200"
               mat-icon-button
             >
               <mat-icon>view_list</mat-icon>
             </button>
             <button
               (click)="onColumnsUpdated(3)"
-              class="p-2 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+              class="p-2 hover:bg-blue-50 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-200"
               mat-icon-button
             >
               <mat-icon>view_module</mat-icon>
             </button>
             <button
               (click)="onColumnsUpdated(4)"
-              class="p-2 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+              class="p-2 hover:bg-blue-50 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-200"
               mat-icon-button
             >
               <mat-icon>view_comfy</mat-icon>
